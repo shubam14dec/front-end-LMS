@@ -8,14 +8,14 @@ const   Myprofile = () => {
     const navigate = useNavigate();
   return (
     <div className='text-richblack-5 gap-7 flex flex-col'>
-        <h1>
+        <h1 className='text-2xl font-semibold'>
             My Profile
         </h1>
 
         {/* section 1 */}
         <div>
             <div className='flex justify-between'>
-                <div> 
+                <div className='flex gap-4 items-center'> 
                     <img src={user.image} alt='profile'
                     className='aspect-square w-[78px] rounded-full object-cover'/>
                     <div className='flex flex-col'>
@@ -36,7 +36,7 @@ const   Myprofile = () => {
         {/* section 2 */}
         <div>
             <div className='flex justify-between items-center mt-6'>
-                <p className='text-2xl'>About</p>
+                <p className='text-2xl text-yellow-50'>About</p>
                 <IconBtn
                 onClickHandler={()=>{navigate("/dashboard/settings")}}
                 text={"Edit"}
@@ -47,8 +47,8 @@ const   Myprofile = () => {
 
         {/* section 3 */}
         <div className='flex flex-col'>
-            <div className='flex justify-between'>
-                <p>Personal Details</p>
+            <div className='flex justify-between mb-5'>
+                <p className='text-2xl text-yellow-50'>Personal Details</p>
                 <IconBtn
                 onClickHandler={()=>{navigate("/dashboard/settings")}}
                 text={"Edit"}
@@ -57,29 +57,29 @@ const   Myprofile = () => {
             <div className='flex justify-between'>
                 <div>
                 <div className='flex gap-6'>
-                    <p>First Name</p>
+                    <p>First Name :-</p>
                     <p>{user.firstName}</p>
                 </div>
                 <div className='flex gap-6'>
-                    <p>Email</p>
+                    <p>Email :-</p>
                     <p>{user.email}</p>
                 </div>
                 <div className='flex gap-6'>
-                    <p>Gender</p>
+                    <p>Gender :-</p>
                     <p>{user.additionalDetails.gender}</p>
                 </div>
                 </div>
                 <div>
                 <div className='flex gap-6'>
-                    <p>Last Name</p>
+                    <p>Last Name :-</p>
                     <p>{user.lastName}</p>
                 </div>
                 <div className='flex gap-6'>
-                    <p>Phone Number</p>
+                    <p>Phone Number :-</p>
                     <p>{user.additionalDetails.contactNumber?user.additionalDetails.contactNumber:"Add Contact Number"}</p>
                 </div>
                 <div className='flex gap-6'>
-                    <p>Date of Birth</p>
+                    <p>Date of Birth :-</p>
                     <p>{user.additionalDetails.dateOfBirth?user.additionalDetails.dateOfBirth:"Add your Date of Birth"}</p>
                 </div>
                 </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, matchPath } from 'react-router-dom'
-import logo from "../../assets/Logo/Logo-Full-Light.png"
+import logo from "../../assets/Logo/logoEdtech.png"
 import {NavbarLinks} from "../../data/navbar-links"
 import { useLocation } from 'react-router-dom'
 import { BsCart } from "react-icons/bs";
@@ -43,7 +43,7 @@ const Navbar = () => {
             
             {/* Images */}
             <Link to={"/"}>
-            <img src={logo} width={160} height={42} loading='lazy' />
+            <img src={logo} width={180} height={42} loading='lazy' />
             </Link>
         
             {/* nav links */}

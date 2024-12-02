@@ -17,7 +17,7 @@ const CourseCard = ({details,height}) => {
                         <p>{details.courseName}</p>
                         <div className='flex'>
                         <p className='text-yellow-25'>Instructor Name :- </p>
-                        <p>{details.instructor.firstName} {details.instructor.lastName}</p>
+                        <p>&nbsp;{details.instructor.firstName} {details.instructor.lastName}</p>
                         </div>
                 </div>
             </div>

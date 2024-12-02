@@ -41,7 +41,7 @@ const CourseDetails = () => {
     <div className={`relative w-full bg-richblack-800`}>
         {/* Hero Section */}
         <div className="mx-auto box-content px-4 ">
-          <div className="flex min-h-[450px] gap-10 py-8">
+          <div className="flex min-h-[450px] gap-10 py-8 pl-12">
             <div className="relative block max-h-[30rem]">
               <div className="absolute bottom-0 left-0 h-full w-full shadow-[#161D29_0px_-64px_36px_-28px_inset]"></div>
               <img
@@ -81,9 +81,11 @@ const CourseDetails = () => {
               <p className="space-x-3 pb-4 text-3xl font-semibold text-richblack-5">
                 Rs. {response?.courseDetails?.price}
               </p>
-              <button className="text-white uppercase tracking-wider bg-yellow-100 pt-2 pb-2 rounded-md font-bold text-xl" onClick={handleBuyCourse}>
+              <div>
+              <button className="text-white uppercase tracking-wider bg-yellow-100 pt-2 pb-2 rounded-md font-bold text-xl px-6" onClick={handleBuyCourse}>
                 Buy Now
               </button>
+              </div>
               
             </div>
             </div>

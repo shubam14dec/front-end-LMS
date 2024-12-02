@@ -24,7 +24,7 @@ const Enrolledcourses = () => {
 
   return (
     <div className='text-richblack-5'>
-        <div>Enrolled Courses</div>
+        <div className='text-2xl font-semibold'>Enrolled Courses</div>
         {
             !enrolledcourses?(<div>
                 Loading...
